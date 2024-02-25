@@ -147,7 +147,6 @@ export default {
     },
     async selectDayForecast(day) {
       this.selectedDayForecast = day;
-      console.log(day)
       const response = await axios.get(
         `https://api.openweathermap.org/data/2.5/forecast?q=${this.city}&appid=${this.apiKey}&units=metric`
       );
